@@ -1,6 +1,10 @@
-﻿namespace maui_issue_renderers_do_not_work_with_generic_classes;
+﻿using System;
+using Microsoft.Maui.Accessibility;
+using Microsoft.Maui.Controls;
 
-public partial class MainPage : ContentPage
+namespace maui_issue_renderers_do_not_work_with_generic_classes;
+
+public partial class MainPage : CustomContentPage
 {
 	int count = 0;
 
@@ -21,4 +25,3 @@ public partial class MainPage : ContentPage
 		SemanticScreenReader.Announce(CounterBtn.Text);
 	}
 }
-

@@ -2,11 +2,12 @@
   version="1.0"
   encoding="utf-8"?>
 
-<ContentPage
+<mauiIssueRenderersDoNotWorkWithGenericClasses:CustomContentPage
   xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+  xmlns:mauiIssueRenderersDoNotWorkWithGenericClasses="clr-namespace:maui_issue_renderers_do_not_work_with_generic_classes"
   x:Class="maui_issue_renderers_do_not_work_with_generic_classes.ContactsPage">
   <ContentPage.Content>
     
   </ContentPage.Content>
-</ContentPage>
+</mauiIssueRenderersDoNotWorkWithGenericClasses:CustomContentPage>
