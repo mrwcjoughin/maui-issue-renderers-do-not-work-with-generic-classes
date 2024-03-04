@@ -4,7 +4,7 @@ namespace maui_issue_renderers_do_not_work_with_generic_classes;
 
 public static class MauiProgram
 {
-	public static MauiApp CreateMauiApp()
+	public static MauiAppBuilder CreateMauiAppBuilder()
 	{
 		var builder = MauiApp.CreateBuilder();
 		builder
@@ -19,6 +19,6 @@ public static class MauiProgram
 		builder.Logging.AddDebug();
 #endif
 
-		return builder.Build();
+		return builder;
 	}
 }
