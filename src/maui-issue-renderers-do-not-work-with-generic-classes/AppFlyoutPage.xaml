@@ -2,7 +2,7 @@
   version="1.0"
   encoding="utf-8"?>
 
-<FlyoutPage
+<mauiIssueRenderersDoNotWorkWithGenericClasses:CustomFlyoutPage
   xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
   xmlns:mauiIssueRenderersDoNotWorkWithGenericClasses="clr-namespace:maui_issue_renderers_do_not_work_with_generic_classes"
@@ -14,8 +14,8 @@
   <FlyoutPage.Detail>
     <NavigationPage>
       <x:Arguments>
-        <mauiIssueRenderersDoNotWorkWithGenericClasses:MainPage />
+        <mauiIssueRenderersDoNotWorkWithGenericClasses:MainPage BackgroundColor="Green" />
       </x:Arguments>
     </NavigationPage>
   </FlyoutPage.Detail>
-</FlyoutPage>
+</mauiIssueRenderersDoNotWorkWithGenericClasses:CustomFlyoutPage>
