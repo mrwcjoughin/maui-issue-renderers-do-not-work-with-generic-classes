@@ -2,6 +2,7 @@
 using Android.Runtime;
 using maui_issue_renderers_do_not_work_with_generic_classes.Platforms.Android.Renderers;
 using Microsoft.Maui;
+using Microsoft.Maui.Controls.Compatibility.Hosting;
 using Microsoft.Maui.Hosting;
 
 namespace maui_issue_renderers_do_not_work_with_generic_classes;
@@ -20,7 +21,7 @@ public class MainApplication : MauiApplication
 		mauiAppBuilder.ConfigureMauiHandlers(handlers =>
 		{
 			// handlers.AddHandler(typeof(FlyoutPage), typeof(CustomFlyoutPageRenderer));
-			handlers.AddHandler(typeof(CustomContentPage), typeof(CustomContentPageRenderer));
+			handlers.AddCompatibilityRenderer(typeof(CustomContentPage), typeof(CustomContentPageRenderer));
 		});
 			
 
